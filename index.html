@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Celebration of Excellence — Mrs. Ruth Omolola Bayode</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8C97A;
+    --gold-pale: #F5E6B8;
+    --navy: #0D1B3E;
+    --navy-mid: #1A2E5A;
+    --navy-light: #2A4080;
+    --cream: #FAF5EC;
+    --brown-dark: #3B2310;
+    --brown-mid: #7A4928;
+    --rose: #C97B7B;
+    --rose-light: #E8B4A0;
+    --white: #FFFFFF;
+    --charcoal: #1C1C1C;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Raleway', sans-serif;
+    background: var(--charcoal);
+    color: var(--cream);
+    overflow-x: hidden;
+  }
+
+  /* ===== HERO SECTION ===== */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #050A1A 0%, #0D1B3E 35%, #1A2E5A 60%, #0A0F1C 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(201,168,76,0.12) 0%, transparent 60%),
+                radial-gradient(ellipse at 20% 80%, rgba(42,64,128,0.4) 0%, transparent 50%);
+  }
+
+  /* Stars */
+  .stars {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+  }
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: var(--gold-light);
+    border-radius: 50%;
+    animation: twinkle 3s infinite alternate;
+  }
+
+  @keyframes twinkle {
+    0% { opacity: 0.2; transform: scale(1); }
+    100% { opacity: 1; transform: scale(1.4); }
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: 100%;
+    max-width: 1300px;
+    min-height: 100vh;
+    align-items: center;
+  }
+
+  .hero-text {
+    padding: 80px 60px 80px 80px;
+    animation: fadeInLeft 1.2s ease forwards;
+  }
+
+  @keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .hero-tag {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid rgba(201,168,76,0.4);
+    padding: 8px 20px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .hero-tag::before {
+    content: '✦';
+    margin-right: 8px;
+    font-size: 8px;
+  }
+  .hero-tag::after {
+    content: '✦';
+    margin-left: 8px;
+    font-size: 8px;
+  }
+
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(52px, 6vw, 80px);
+    font-weight: 300;
+    line-height: 1.0;
+    color: var(--white);
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--gold-light);
+    font-weight: 400;
+  }
+
+  .hero-title .name-line {
+    font-weight: 700;
+    font-size: clamp(40px, 5vw, 66px);
+    display: block;
+    background: linear-gradient(90deg, var(--gold-light), var(--gold), var(--gold-pale));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--gold-pale);
+    margin-bottom: 40px;
+    opacity: 0.9;
+  }
+
+  .hero-divider {
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 30px 0;
+  }
+
+  .hero-date {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    line-height: 1.9;
+    color: rgba(250,245,236,0.75);
+    max-width: 480px;
+    margin-bottom: 50px;
+  }
+
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: var(--navy);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px 40px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+  }
+
+  .hero-cta:hover {
+    background: linear-gradient(135deg, var(--gold-light), var(--gold-pale));
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(201,168,76,0.3);
+  }
+
+  /* Hero Photo Panel */
+  .hero-photo-panel {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation: fadeInRight 1.2s ease 0.3s forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .photo-bg-glow {
+    position: absolute;
+    width: 600px;
+    height: 700px;
+    background: radial-gradient(ellipse, rgba(201,168,76,0.15) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero-photo-frame {
+    position: relative;
+    width: 420px;
+    height: 560px;
+    z-index: 5;
+  }
+
+  .hero-photo-frame::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(135deg, var(--gold), transparent 40%, var(--gold-light) 60%, transparent);
+    z-index: -1;
+  }
+
+  .hero-photo-frame::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: -20px;
+    bottom: -20px;
+    border: 1px solid rgba(201,168,76,0.25);
+    z-index: -2;
+  }
+
+  .hero-photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    filter: contrast(1.05) brightness(1.02);
+  }
+
+  .photo-corner {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-color: var(--gold);
+    border-style: solid;
+  }
+  .photo-corner.tl { top: -8px; left: -8px; border-width: 2px 0 0 2px; }
+  .photo-corner.tr { top: -8px; right: -8px; border-width: 2px 2px 0 0; }
+  .photo-corner.bl { bottom: -8px; left: -8px; border-width: 0 0 2px 2px; }
+  .photo-corner.br { bottom: -8px; right: -8px; border-width: 0 2px 2px 0; }
+
+  .hero-float-badge {
+    position: absolute;
+    bottom: 80px;
+    left: -40px;
+    background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+    border: 1px solid rgba(201,168,76,0.4);
+    padding: 20px 25px;
+    z-index: 20;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  }
+
+  .badge-date {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 22px;
+    color: var(--gold);
+    font-weight: 700;
+    display: block;
+  }
+
+  .badge-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold-pale);
+    opacity: 0.7;
+  }
+
+  .hero-flower-l, .hero-flower-r {
+    position: absolute;
+    width: 200px;
+    opacity: 0.15;
+    pointer-events: none;
+  }
+
+  .hero-flower-l { bottom: 0; left: -60px; transform: rotate(-15deg); }
+  .hero-flower-r { top: 0; right: -40px; transform: rotate(20deg); }
+
+  /* ===== SCROLLING MARQUEE ===== */
+  .marquee-strip {
+    background: linear-gradient(90deg, var(--gold-light), var(--gold), var(--gold-light));
+    padding: 14px 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .marquee-track {
+    display: inline-flex;
+    gap: 60px;
+    animation: marquee 20s linear infinite;
+  }
+
+  .marquee-item {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: var(--navy);
+    font-weight: 700;
+  }
+
+  .marquee-sep {
+    color: var(--navy-mid);
+    opacity: 0.5;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ===== BIOGRAPHY SECTION ===== */
+  .section {
+    padding: 100px 0;
+    position: relative;
+  }
+
+  .section-bg-bio {
+    background: linear-gradient(180deg, #0A0F1C 0%, #0D1B3E 40%, #080C18 100%);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .section-eyebrow {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .section-eyebrow::before, .section-eyebrow::after {
+    content: '';
+    height: 1px;
+    width: 40px;
+    background: var(--gold);
+    opacity: 0.5;
+  }
+
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(40px, 5vw, 64px);
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .section-title em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+
+  .bio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    align-items: start;
+    margin-top: 60px;
+  }
+
+  .bio-portrait {
+    position: sticky;
+    top: 100px;
+  }
+
+  .bio-portrait-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+  }
+
+  .bio-portrait-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    filter: sepia(0.1) contrast(1.05);
+    transition: transform 0.8s ease;
+  }
+
+  .bio-portrait-frame:hover img { transform: scale(1.04); }
+
+  .bio-portrait-frame::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 60%, rgba(13,27,62,0.8) 100%);
+  }
+
+  .bio-portrait-border {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: -15px;
+    bottom: -15px;
+    border: 1px solid rgba(201,168,76,0.3);
+    z-index: -1;
+  }
+
+  .bio-portrait-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+  }
+
+  .bio-portrait-label span {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 24px;
+    color: var(--gold-pale);
+  }
+
+  .bio-portrait-label small {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.8;
+  }
+
+  .bio-chapters { display: flex; flex-direction: column; gap: 50px; }
+
+  .bio-chapter {
+    border-left: 2px solid rgba(201,168,76,0.2);
+    padding-left: 30px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+  }
+
+  .bio-chapter.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .bio-chapter::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 15px rgba(201,168,76,0.5);
+  }
+
+  .chapter-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--gold-light);
+    margin-bottom: 14px;
+    font-style: italic;
+  }
+
+  .chapter-text {
+    font-size: 15px;
+    line-height: 1.95;
+    color: rgba(250,245,236,0.75);
+  }
+
+  /* ===== ATTRIBUTES SECTION ===== */
+  .section-bg-attrs {
+    background: linear-gradient(180deg, #080C18 0%, #0A0F1C 100%);
+  }
+
+  .attrs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 60px;
+  }
+
+  .attr-card {
+    background: rgba(201,168,76,0.04);
+    border: 1px solid rgba(201,168,76,0.12);
+    padding: 50px 35px;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .attr-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(201,168,76,0.08) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  .attr-card:hover { transform: translateY(-5px); }
+  .attr-card:hover::before { opacity: 1; }
+
+  .attr-icon {
+    font-size: 36px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .attr-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    color: var(--gold-light);
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  .attr-text {
+    font-size: 13px;
+    line-height: 1.8;
+    color: rgba(250,245,236,0.6);
+  }
+
+  /* ===== FLYERS SECTION ===== */
+  .section-bg-flyers {
+    background: linear-gradient(180deg, #0A0F1C 0%, #030609 50%, #0A0F1C 100%);
+  }
+
+  .flyers-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 80px;
+  }
+
+  .flyers-intro .section-eyebrow {
+    justify-content: center;
+  }
+
+  .flyers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  /* ===== FLYER 1: ROYAL GOLD ===== */
+  .flyer {
+    position: relative;
+    aspect-ratio: 4/5;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+
+  .flyer:hover { transform: scale(1.02); }
+
+  .flyer-1 {
+    background: linear-gradient(150deg, #0a0f1c 0%, #1a1a2e 30%, #16213e 60%, #0f3460 100%);
+  }
+
+  .flyer-1 .f-bg-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    opacity: 0.35;
+    filter: grayscale(0.2);
+  }
+
+  .flyer-1 .f-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+      rgba(10,15,28,0.7) 0%,
+      rgba(15,52,96,0.5) 40%,
+      rgba(201,168,76,0.08) 100%);
+  }
+
+  .flyer-1 .f-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    z-index: 10;
+  }
+
+  .f-studio-logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  .f-studio-letter {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 24px;
+    color: var(--gold);
+    font-weight: 700;
+  }
+
+  .f-studio-name {
+    font-size: 7px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 600;
+  }
+
+  .f-portrait-area {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .f-portrait-main {
+    width: 65%;
+    height: 85%;
+    object-fit: cover;
+    object-position: top center;
+    position: relative;
+    z-index: 5;
+    border: 2px solid rgba(201,168,76,0.5);
+    box-shadow: 0 0 40px rgba(201,168,76,0.2), 0 0 80px rgba(10,15,28,0.8);
+  }
+
+  .f-glow-ring {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+  }
+
+  .f-bottom {
+    padding-top: 10px;
+  }
+
+  .f-hb-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 8px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold-pale);
+    opacity: 0.7;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  .f-name-script {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    background: linear-gradient(90deg, var(--gold-light), var(--gold), var(--gold-pale));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 3px;
+  }
+
+  .f-name-old {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: clamp(9px, 1.5vw, 12px);
+    text-align: center;
+    color: var(--gold-pale);
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+  }
+
+  .f-date-pill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .f-date-inner {
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.4);
+    padding: 5px 18px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: var(--gold);
+  }
+
+  /* Floral SVG elements */
+  .floral-tl, .floral-br {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  .floral-tl { top: 40px; left: -10px; }
+  .floral-br { bottom: 10px; right: -10px; transform: rotate(180deg); }
+
+  /* ===== FLYER 2: GOLDEN HOUR ===== */
+  .flyer-2 {
+    background: linear-gradient(145deg, #1a0e05 0%, #3B2310 30%, #7A4928 55%, #C9A84C 85%, #E8C97A 100%);
+  }
+
+  .flyer-2 .f-bg-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    opacity: 0.25;
+    mix-blend-mode: luminosity;
+  }
+
+  .flyer-2 .f-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+      rgba(26,14,5,0.85) 0%,
+      rgba(59,35,16,0.6) 45%,
+      rgba(201,168,76,0.15) 100%);
+  }
+
+  .flyer-2 .f-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    z-index: 10;
+  }
+
+  .f-ornament {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    color: var(--gold);
+    opacity: 0.6;
+    margin-bottom: 10px;
+    letter-spacing: 8px;
+  }
+
+  .f-big-photo-wrap {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .f-big-photo {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    position: absolute;
+    top: 0;
+    filter: contrast(1.08);
+  }
+
+  .f-photo-side-glow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(59,35,16,1) 0%, transparent 100%);
+    z-index: 5;
+  }
+
+  .f-side-label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg) translateX(-30px);
+    font-family: 'Raleway', sans-serif;
+    font-size: 7px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.6;
+  }
+
+  /* ===== FLYER 3: MIDNIGHT ROSE ===== */
+  .flyer-3 {
+    background: linear-gradient(160deg, #1a0510 0%, #2d0a1e 25%, #1a1a2e 55%, #0D1B3E 100%);
+  }
+
+  .flyer-3 .f-bg-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    opacity: 0.2;
+    filter: hue-rotate(300deg) saturate(0.5);
+  }
+
+  .flyer-3 .f-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 30%, rgba(201,124,124,0.15) 0%, transparent 60%),
+                linear-gradient(180deg, rgba(26,5,16,0.8) 0%, rgba(13,27,62,0.6) 100%);
+  }
+
+  .f-rose-accent {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,123,123,0.15) 0%, transparent 70%);
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+  }
+
+  /* ===== GALLERY / LARGE FLYER ===== */
+  .flyer-large {
+    grid-column: 1 / -1;
+    aspect-ratio: 16/7;
+    background: linear-gradient(135deg, #050A1A 0%, #0D1B3E 30%, #1a2e5a 55%, #3B2310 80%, #C9A84C 100%);
+  }
+
+  .flyer-large .f-bg-photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    opacity: 0.25;
+  }
+
+  .flyer-large .f-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+      rgba(5,10,26,0.95) 0%,
+      rgba(13,27,62,0.75) 35%,
+      rgba(26,46,90,0.5) 55%,
+      rgba(59,35,16,0.6) 75%,
+      rgba(201,168,76,0.2) 100%);
+  }
+
+  .flyer-large .f-content {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    z-index: 10;
+    padding: 50px 60px;
+  }
+
+  .fl-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .fl-date-big {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 14px;
+    color: var(--gold);
+    letter-spacing: 3px;
+  }
+
+  .fl-title-main {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--white);
+  }
+
+  .fl-title-main strong {
+    font-weight: 700;
+    font-style: italic;
+    color: var(--gold-light);
+    display: block;
+    font-size: 56px;
+  }
+
+  .fl-tagline {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold-pale);
+    opacity: 0.7;
+  }
+
+  .fl-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fl-portrait-wrap {
+    width: 220px;
+    height: 340px;
+    position: relative;
+  }
+
+  .fl-portrait-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border: 2px solid rgba(201,168,76,0.5);
+  }
+
+  .fl-portrait-wrap::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: -10px;
+    bottom: -10px;
+    border: 1px solid rgba(201,168,76,0.2);
+    z-index: -1;
+  }
+
+  .fl-right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+  }
+
+  .fl-verse {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--cream);
+    opacity: 0.7;
+    line-height: 1.7;
+    max-width: 260px;
+  }
+
+  .fl-verse cite {
+    display: block;
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 2px;
+    margin-top: 8px;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+
+  .fl-wishes {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 2px;
+  }
+
+  /* ===== QUOTE SECTION ===== */
+  .quote-section {
+    padding: 120px 0;
+    background: linear-gradient(180deg, #030609 0%, #0D1B3E 50%, #030609 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .quote-section::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 300px;
+    color: rgba(201,168,76,0.04);
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  .quote-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 4vw, 50px);
+    font-style: italic;
+    font-weight: 300;
+    color: var(--cream);
+    max-width: 900px;
+    margin: 0 auto 30px;
+    line-height: 1.5;
+    position: relative;
+    z-index: 5;
+    padding: 0 60px;
+  }
+
+  .quote-text strong { color: var(--gold-light); font-weight: 600; }
+
+  .quote-attr {
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.7;
+    position: relative;
+    z-index: 5;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    background: #030609;
+    padding: 60px 0 40px;
+    text-align: center;
+    border-top: 1px solid rgba(201,168,76,0.1);
+  }
+
+  .footer-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-style: italic;
+    color: var(--gold-light);
+    margin-bottom: 8px;
+  }
+
+  .footer-sub {
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.5;
+    margin-bottom: 30px;
+  }
+
+  .footer-hearts {
+    font-size: 20px;
+    letter-spacing: 8px;
+    color: var(--rose);
+    opacity: 0.7;
+    margin-bottom: 30px;
+  }
+
+  .footer-copy {
+    font-size: 11px;
+    color: rgba(250,245,236,0.25);
+    letter-spacing: 2px;
+  }
+
+  /* ===== PARTICLES ===== */
+  .particle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: float-up linear infinite;
+    opacity: 0;
+  }
+
+  @keyframes float-up {
+    0% { transform: translateY(100vh) scale(0); opacity: 0; }
+    10% { opacity: 0.6; }
+    90% { opacity: 0.3; }
+    100% { transform: translateY(-20vh) scale(1); opacity: 0; }
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    .hero-content { grid-template-columns: 1fr; }
+    .hero-photo-panel { height: 60vh; }
+    .hero-text { padding: 60px 30px; }
+    .bio-grid { grid-template-columns: 1fr; }
+    .attrs-grid { grid-template-columns: 1fr 1fr; }
+    .flyers-grid { grid-template-columns: 1fr; }
+    .flyer-large { aspect-ratio: unset; min-height: 400px; }
+    .flyer-large .f-content { grid-template-columns: 1fr; padding: 30px; }
+    .container { padding: 0 30px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="stars" id="stars"></div>
+
+  <!-- Floating particles -->
+  <div id="particles"></div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-tag">A Celebration of Excellence</div>
+      <h1 class="hero-title">
+        <em>Happy Birthday,</em>
+        <span class="name-line">Ruth Omolola</span>
+        <em>Bayode</em>
+      </h1>
+      <div class="hero-divider"></div>
+      <p class="hero-date">✦ May 2, 2026 ✦</p>
+      <p class="hero-desc">
+        Celebrating a woman of profound substance — a pillar of strength, a visionary whose life is a beautiful tapestry of faith, science, and service.
+      </p>
+      <a class="hero-cta" href="#biography">Explore Her Story →</a>
+    </div>
+
+    <div class="hero-photo-panel">
+      <div class="photo-bg-glow"></div>
+      <div class="hero-photo-frame">
+        <img src="https://res.cloudinary.com/dxfbihnf3/image/upload/f_auto,q_auto/FULL_kt3mcs" alt="Mrs. Ruth Omolola Bayode">
+        <div class="photo-corner tl"></div>
+        <div class="photo-corner tr"></div>
+        <div class="photo-corner bl"></div>
+        <div class="photo-corner br"></div>
+      </div>
+      <div class="hero-float-badge">
+        <span class="badge-date">02 · 05</span>
+        <span class="badge-label">Her Special Day · 2026</span>
+      </div>
+
+      <!-- Decorative floral SVG -->
+      <svg class="hero-flower-l" viewBox="0 0 200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 400 C60 300 20 250 40 180 C60 110 100 90 100 50 C100 90 140 110 160 180 C180 250 140 300 100 400Z" fill="#C9A84C" opacity="0.6"/>
+        <path d="M100 350 C80 280 50 240 65 190" stroke="#7A4928" stroke-width="2"/>
+        <ellipse cx="40" cy="200" rx="30" ry="15" fill="#C9A84C" transform="rotate(-30 40 200)" opacity="0.5"/>
+        <ellipse cx="160" cy="200" rx="30" ry="15" fill="#C9A84C" transform="rotate(30 160 200)" opacity="0.5"/>
+        <ellipse cx="70" cy="150" rx="25" ry="12" fill="#E8C97A" transform="rotate(-60 70 150)" opacity="0.4"/>
+        <ellipse cx="130" cy="150" rx="25" ry="12" fill="#E8C97A" transform="rotate(60 130 150)" opacity="0.4"/>
+        <circle cx="100" cy="120" r="18" fill="#C9A84C" opacity="0.7"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marquee-strip">
+  <div class="marquee-track" id="marquee">
+    <span class="marquee-item">Happy Birthday Ruth</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">02 · 05 · 2026</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Agripreneur · Scientist · Minister</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Woman of Excellence</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Happy Birthday Ruth</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">02 · 05 · 2026</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Agripreneur · Scientist · Minister</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Woman of Excellence</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Happy Birthday Ruth</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">02 · 05 · 2026</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Agripreneur · Scientist · Minister</span><span class="marquee-sep">✦</span>
+    <span class="marquee-item">Woman of Excellence</span><span class="marquee-sep">✦</span>
+  </div>
+</div>
+
+<!-- ===== BIOGRAPHY ===== -->
+<section class="section section-bg-bio" id="biography">
+  <div class="container">
+    <div class="section-eyebrow">Her Story</div>
+    <h2 class="section-title">The Life of a <em>Remarkable</em> Woman</h2>
+
+    <div class="bio-grid">
+      <div class="bio-portrait">
+        <div class="bio-portrait-frame">
+          <img src="https://res.cloudinary.com/dxfbihnf3/image/upload/v1776947876/HALF_vem8vz.jpg" alt="Mrs. Ruth Omolola Bayode">
+          <div class="bio-portrait-label">
+            <span>Ruth Omolola</span>
+            <small>Bayode · Born to Shine</small>
+          </div>
+        </div>
+        <div class="bio-portrait-border"></div>
+      </div>
+
+      <div class="bio-chapters">
+        <div class="bio-chapter">
+          <h3 class="chapter-title">Academic & Professional Foundations</h3>
+          <p class="chapter-text">Ruth's journey is rooted in a deep-seated passion for understanding the natural world. A scholar at heart, she has dedicated herself to the fields of Biology and Science Education — where she doesn't just study life, she seeks to improve the quality of it. As a skilled Agripreneur, she has been a driving force behind Fresh Catch Farms Ltd, bringing technical precision to the world of aquaculture and sustainable farming.</p>
+        </div>
+
+        <div class="bio-chapter">
+          <h3 class="chapter-title">A Vision for the Nation</h3>
+          <p class="chapter-text">Beyond the laboratory and the farm, Ruth carries a heavy burden for the future of our nation. She is a woman of vision who aspires to influence the very corridors of the Ministry of Education. Her goal is clear: to impact the Nigerian educational system by fostering scientific literacy and empowering the next generation of thinkers. She believes that education is the most powerful tool for change, and she lives that belief every single day.</p>
+        </div>
+
+        <div class="bio-chapter">
+          <h3 class="chapter-title">Faith & Mentorship</h3>
+          <p class="chapter-text">At the core of Ruth's life is her unwavering Christian faith. It is the compass that guides her actions and the foundation of her character. Alongside her husband, she has been a vital part of mentorship initiatives like the "Choice Architects" platform, providing teenagers and young adults with the framework to make sound, God-honoring life decisions. Whether she is advocating for sexual purity or providing guidance to parents, her voice is one of wisdom, compassion, and truth.</p>
+        </div>
+
+        <div class="bio-chapter">
+          <h3 class="chapter-title">The Heart of the Home</h3>
+          <p class="chapter-text">To her husband Emmanuel, Ruth is more than a partner — she is a confidante, a co-builder of dreams, and his greatest support system. Their union, celebrated on November 8, 2025, marked the beginning of a powerful partnership that blends geospatial science with agricultural innovation and ministry. In the kitchen, Ruth's creativity shines through her passion for the culinary arts, seeing cooking as an avenue for financial independence and a way to bring joy to those around her.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ATTRIBUTES ===== -->
+<section class="section section-bg-attrs">
+  <div class="container">
+    <div class="section-eyebrow" style="justify-content:center; text-align:center">Who She Is</div>
+    <h2 class="section-title" style="text-align:center">Facets of <em>Her Brilliance</em></h2>
+
+    <div class="attrs-grid">
+      <div class="attr-card">
+        <span class="attr-icon">🌾</span>
+        <h3 class="attr-title">Agripreneur</h3>
+        <p class="attr-text">Driving innovation at Fresh Catch Farms Ltd with technical precision and a passion for sustainable aquaculture that nourishes communities.</p>
+      </div>
+      <div class="attr-card">
+        <span class="attr-icon">🔬</span>
+        <h3 class="attr-title">Science Educator</h3>
+        <p class="attr-text">A passionate Biology and Science Education professional committed to fostering scientific literacy in the next generation of Nigerian thinkers.</p>
+      </div>
+      <div class="attr-card">
+        <span class="attr-icon">✅</span>
+        <h3 class="attr-title">Quality Analyst</h3>
+        <p class="attr-text">Her analytical mind ensures that standards are not merely met but consistently exceeded — precision in every endeavor she undertakes.</p>
+      </div>
+      <div class="attr-card">
+        <span class="attr-icon">✝️</span>
+        <h3 class="attr-title">Christian Minister</h3>
+        <p class="attr-text">A faithful daughter of the Most High whose unwavering faith is the compass that guides every action and the bedrock of her character.</p>
+      </div>
+      <div class="attr-card">
+        <span class="attr-icon">👩‍👧</span>
+        <h3 class="attr-title">Youth Mentor</h3>
+        <p class="attr-text">Through the Choice Architects platform, she equips teenagers and young adults with the wisdom to make God-honoring life decisions.</p>
+      </div>
+      <div class="attr-card">
+        <span class="attr-icon">👩‍❤️‍👨</span>
+        <h3 class="attr-title">Devoted Partner</h3>
+        <p class="attr-text">A confidante and co-builder of dreams whose powerful partnership with Emmanuel blends science, faith, and agricultural innovation in beautiful harmony.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BIRTHDAY FLYERS ===== -->
+<section class="section section-bg-flyers" id="flyers">
+  <div class="container">
+    <div class="flyers-intro">
+      <div class="section-eyebrow">Birthday Flyers</div>
+      <h2 class="section-title">Luxury <em>Celebration</em> Designs</h2>
+      <p style="font-size:14px; line-height:1.8; color:rgba(250,245,236,0.6); margin-top:16px;">Four signature birthday flyer designs celebrating Mrs. Ruth Omolola Bayode in elegance and style.</p>
+    </div>
+
+    <div class="flyers-grid">
+
+      <!-- FLYER 1: ROYAL NAVY GOLD -->
+      <div class="flyer flyer-1">
+        <img class="f-bg-photo" src="https://res.cloudinary.com/dxfbihnf3/image/upload/q_auto/f_auto/v1776948711/COUPLE_qvzlgc.png" alt="">
+        <div class="f-overlay"></div>
+
+        <!-- Decorative florals -->
+        <svg class="floral-tl" viewBox="0 0 120 120" fill="none">
+          <circle cx="30" cy="30" r="20" fill="#C9A84C" opacity="0.5"/>
+          <circle cx="60" cy="20" r="14" fill="#E8C97A" opacity="0.4"/>
+          <circle cx="20" cy="60" r="16" fill="#7A4928" opacity="0.5"/>
+          <path d="M10 80 Q50 40 90 10" stroke="#C9A84C" stroke-width="1" opacity="0.4"/>
+          <path d="M5 60 Q40 50 50 20" stroke="#E8C97A" stroke-width="0.8" opacity="0.3"/>
+          <ellipse cx="40" cy="70" rx="15" ry="8" fill="#C9A84C" transform="rotate(-45 40 70)" opacity="0.4"/>
+        </svg>
+
+        <svg class="floral-br" viewBox="0 0 120 120" fill="none">
+          <circle cx="30" cy="30" r="20" fill="#C9A84C" opacity="0.5"/>
+          <circle cx="60" cy="20" r="14" fill="#E8C97A" opacity="0.4"/>
+          <circle cx="20" cy="60" r="16" fill="#7A4928" opacity="0.5"/>
+          <path d="M10 80 Q50 40 90 10" stroke="#C9A84C" stroke-width="1" opacity="0.4"/>
+          <ellipse cx="40" cy="70" rx="15" ry="8" fill="#C9A84C" transform="rotate(-45 40 70)" opacity="0.4"/>
+        </svg>
+
+        <div class="f-content">
+          <div class="f-studio-logo">
+            <span class="f-studio-letter">O</span>
+            <span class="f-studio-name">Ozographics Studio</span>
+          </div>
+
+          <div class="f-portrait-area">
+            <div class="f-glow-ring"></div>
+            <img class="f-portrait-main" src="https://res.cloudinary.com/dxfbihnf3/image/upload/q_auto/f_auto/v1776948711/COUPLE_qvzlgc.png" alt="Ruth Omolola Bayode">
+          </div>
+
+          <div class="f-bottom">
+            <p class="f-hb-text">Happy Birthday</p>
+            <p class="f-name-script">Bayode Ruth</p>
+            <p class="f-name-old">Omolola</p>
+            <div class="f-date-pill">
+              <div class="f-date-inner">02 / 05 / 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FLYER 2: GOLDEN EARTH -->
+      <div class="flyer flyer-2">
+        <img class="f-bg-photo" src="https://res.cloudinary.com/dxfbihnf3/image/upload/q_auto/f_auto/v1776948755/DSC_0807_lwyglf.jpg" alt="">
+        <div class="f-overlay"></div>
+        <div class="f-content">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+            <div class="f-studio-logo">
+              <span class="f-studio-letter" style="color:#E8C97A;">O</span>
+              <span class="f-studio-name" style="color:#FAF5EC;">Ozographics Studio</span>
+            </div>
+            <div style="text-align:right;">
+              <div style="font-family:'Cinzel Decorative',serif; font-size:11px; color:#C9A84C; letter-spacing:2px;">02/05/2026</div>
+            </div>
+          </div>
+
+          <div class="f-ornament">— ✦ —</div>
+
+          <div class="f-big-photo-wrap">
+            <img class="f-big-photo" src="https://res.cloudinary.com/dxfbihnf3/image/upload/q_auto/f_auto/v1776947887/HBDFLYER_xcyiw1.png" alt="Ruth Omolola Bayode">
+            <div class="f-photo-side-glow"></div>
+            <div class="f-side-label">Celebrating Excellence</div>
+          </div>
+
+          <div class="f-bottom" style="padding-top:12px;">
+            <p class="f-hb-text" style="color:#E8C97A;">✦ Happy Birthday ✦</p>
+            <p class="f-name-script" style="font-size:clamp(26px,5vw,36px);">Bayode Ruth</p>
+            <p class="f-name-old" style="color:#E8C97A; font-size:clamp(10px,1.8vw,14px);">Omolola</p>
+            <div style="text-align:center; margin-top:10px;">
+              <span style="font-family:'Raleway',sans-serif; font-size:9px; letter-spacing:3px; color:#C9A84C; opacity:0.7; text-transform:uppercase;">A Life Well Lived · Faith · Science · Service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FLYER 3: MIDNIGHT ROSE -->
+      <div class="flyer flyer-3">
+        <img class="f-bg-photo" src="https://res.cloudinary.com/dxfbihnf3/image/upload/q_auto/f_auto/v1776948756/DSC_0768_rjmuet.jpg" alt="">
+        <div class="f-overlay"></div>
+        <div class="f-rose-accent"></div>
+
+        <svg class="floral-tl" viewBox="0 0 120 120" fill="none" style="opacity:0.25">
+          <circle cx="30" cy="30" r="20" fill="#C97B7B"/>
+          <circle cx="60" cy="20" r="14" fill="#E8B4A0"/>
+          <circle cx="20" cy="60" r="16" fill="#7A2828"/>
+          <path d="M10 80 Q50 40 90 10" stroke="#C97B7B" stroke-width="1.5"/>
+          <ellipse cx="40" cy="70" rx="15" ry="8" fill="#C97B7B" transform="rotate(-45 40 70)"/>
+        </svg>
+
+        <div class="f-content">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+            <div class="f-studio-logo">
+              <span class="f-studio-letter" style="color:#E8B4A0;">O</span>
+              <span class="f-studio-name">Ozographics Studio</span>
+            </div>
+            <div style="text-align:right; font-family:'Cinzel Decorative',serif; font-size:9px; color:#C97B7B; letter-spacing:2px;">02/05/2026</div>
+          </div>
+
+          <div class="f-portrait-area">
+            <div style="position:absolute; width:110%; height:110%; background:radial-gradient(circle, rgba(201,123,123,0.1) 0%, transparent 70%);"></div>
+            <img class="f-portrait-main" src="https://res.cloudinary.com/dxfbihnf3/image/upload/q_auto/f_auto/v1776948756/DSC_0768_rjmuet.jpg" alt="Ruth Omolola Bayode"
+                 style="border-color:rgba(201,123,123,0.6); box-shadow:0 0 40px rgba(201,123,123,0.2), 0 0 80px rgba(10,5,16,0.8);">
+          </div>
+
+          <div class="f-bottom">
+            <p class="f-hb-text" style="color:#E8B4A0;">Happy Birthday</p>
+            <p class="f-name-script" style="background:linear-gradient(90deg,#E8B4A0,#C97B7B,#FAF5EC); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">Bayode Ruth</p>
+            <p class="f-name-old" style="color:#E8B4A0;">Omolola</p>
+            <div class="f-date-pill">
+              <div class="f-date-inner" style="border-color:rgba(201,123,123,0.4); color:#C97B7B;">02 / 05 / 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FLYER 4: WIDE PANORAMIC LUXURY -->
+      <div class="flyer flyer-large">
+        <img class="f-bg-photo" src="https://res.cloudinary.com/dxfbihnf3/image/upload/q_auto/f_auto/v1776948755/DSC_0807_lwyglf.jpg" alt="">
+        <div class="f-overlay"></div>
+
+        <!-- Decorative elements -->
+        <svg style="position:absolute;bottom:0;left:0;width:200px;height:200px;opacity:0.15;pointer-events:none;" viewBox="0 0 200 200" fill="none">
+          <circle cx="50" cy="150" r="40" fill="#C9A84C"/>
+          <circle cx="100" cy="170" r="30" fill="#E8C97A"/>
+          <circle cx="30" cy="100" r="25" fill="#7A4928"/>
+          <path d="M0 200 Q80 120 160 80" stroke="#C9A84C" stroke-width="2"/>
+          <ellipse cx="70" cy="120" rx="30" ry="15" fill="#C9A84C" transform="rotate(-45 70 120)"/>
+        </svg>
+
+        <svg style="position:absolute;top:0;right:0;width:180px;height:180px;opacity:0.15;pointer-events:none;transform:rotate(180deg);" viewBox="0 0 200 200" fill="none">
+          <circle cx="50" cy="150" r="40" fill="#C9A84C"/>
+          <circle cx="100" cy="170" r="30" fill="#E8C97A"/>
+          <circle cx="30" cy="100" r="25" fill="#7A4928"/>
+          <path d="M0 200 Q80 120 160 80" stroke="#C9A84C" stroke-width="2"/>
+          <ellipse cx="70" cy="120" rx="30" ry="15" fill="#C9A84C" transform="rotate(-45 70 120)"/>
+        </svg>
+
+        <div class="f-content">
+          <div class="fl-left">
+            <div style="display:flex;flex-direction:column;margin-bottom:5px;">
+              <span class="f-studio-letter" style="font-family:'Cinzel Decorative',serif;font-size:30px;color:#C9A84C;font-weight:700;">O</span>
+              <span style="font-size:8px;letter-spacing:3px;text-transform:uppercase;color:white;font-weight:600;">Ozographics Studio</span>
+            </div>
+            <div style="width:60px;height:1px;background:linear-gradient(90deg,#C9A84C,transparent);margin:10px 0;"></div>
+            <p class="fl-date-big">02 · 05 · 2026</p>
+            <div class="fl-title-main">
+              Happy<br>
+              <strong>Birthday</strong>
+            </div>
+            <p class="fl-tagline">A Day of Excellence & Grace</p>
+          </div>
+
+          <div class="fl-center">
+            <div class="fl-portrait-wrap">
+              <img src="https://res.cloudinary.com/dxfbihnf3/image/upload/q_auto/f_auto/v1776947887/HBDFLYER_xcyiw1.png"Mrs. Ruth Omolola Bayode">
+            </div>
+          </div>
+
+          <div class="fl-right">
+            <div>
+              <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,44px);font-weight:700;font-style:italic;background:linear-gradient(90deg,#E8C97A,#C9A84C,#F5E6B8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;text-align:right;">Bayode Ruth</p>
+              <p style="font-family:'Cinzel Decorative',serif;font-size:clamp(11px,1.5vw,16px);color:#E8C97A;letter-spacing:4px;text-align:right;margin-top:4px;">OMOLOLA</p>
+            </div>
+            <div style="width:60px;height:1px;background:linear-gradient(90deg,transparent,#C9A84C);margin:5px 0 5px auto;"></div>
+            <div class="fl-verse">
+              "She is clothed with strength and dignity; she laughs without fear of the future."
+              <cite>Proverbs 31:25</cite>
+            </div>
+            <p class="fl-wishes">✦ Many More Glorious Years ✦</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUOTE ===== -->
+<section class="quote-section">
+  <p class="quote-text">
+    "Mrs. Ruth Omolola Bayode is a woman who balances the rigors of science with the warmth of a servant's heart. She is a <strong>builder of businesses</strong>, a <strong>molder of minds</strong>, and a faithful daughter of the Most High."
+  </p>
+  <p class="quote-attr">✦ A Celebration of Excellence · May 2, 2026 ✦</p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <p class="footer-name">Ruth Omolola Bayode</p>
+  <p class="footer-sub">Agripreneur · Scientist · Minister · Wife · Visionary</p>
+  <p class="footer-hearts">♡ ♡ ♡</p>
+  <p class="footer-copy">Crafted with love by Emmanuel · 02.05.2026</p>
+</footer>
+
+<script>
+  // Generate stars
+  const starsContainer = document.getElementById('stars');
+  for (let i = 0; i < 80; i++) {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.left = Math.random() * 100 + '%';
+    star.style.top = Math.random() * 100 + '%';
+    star.style.animationDelay = Math.random() * 4 + 's';
+    star.style.animationDuration = (2 + Math.random() * 3) + 's';
+    star.style.width = star.style.height = (1 + Math.random() * 2) + 'px';
+    starsContainer.appendChild(star);
+  }
+
+  // Generate particles
+  const particlesContainer = document.getElementById('particles');
+  for (let i = 0; i < 15; i++) {
+    const p = document.createElement('div');
+    p.classList.add('particle');
+    p.style.left = Math.random() * 100 + '%';
+    p.style.width = p.style.height = (3 + Math.random() * 5) + 'px';
+    p.style.background = Math.random() > 0.5 ? '#C9A84C' : '#E8C97A';
+    p.style.animationDuration = (8 + Math.random() * 12) + 's';
+    p.style.animationDelay = Math.random() * 10 + 's';
+    particlesContainer.appendChild(p);
+  }
+
+  // Scroll reveal for bio chapters
+  const chapters = document.querySelectorAll('.bio-chapter');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, i * 150);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  chapters.forEach(ch => observer.observe(ch));
+
+  // Duplicate marquee for seamless loop
+  const marquee = document.getElementById('marquee');
+  const clone = marquee.cloneNode(true);
+  marquee.parentNode.appendChild(clone);
+</script>
+</body>
+</html>
